@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+</head>
+<style>
+    .bg-image {
+    width: 100%; /* Set width to 100% for background images */
+    height: 100%; /* Set height to 100% for background images */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Send background images behind other content */
+    }
+    .bg-image2{
+        left: 50%;
+        width: 600px;
+        z-index: -1;
+    }
+    .container {
+        position: relative;
+        z-index: 1;
+        margin-top: 50px; /* Add margin from the top for spacing */
+        background-color: rgba(255, 255, 255, 0.8); /* Background color for the container */
+        padding: 20px; /* Add padding inside the container */
+        width: 900px; /* Set width of the container */
+        height: 500px;
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+    .table {
+        width: 100%; /* Set table width to 100% of its container */
+        border-collapse: collapse; /* Collapse table borders */
+        display: contents;
+        justify-content: right;
+    }
+    .th, td{
+        padding: 8px;
+        text-align: left;
+        border-bottom: 3px solid;
+        border: 3px solid;
+        font-weight: bold;
+        column-width: 100px;
+        background-color: aliceblue;
+    }
+    .a{
+        column-width: 300px;
+        background-color: aquamarine;
+    }
+    .th{
+        background-color: red;
+    }
+    .back{
+        text-decoration: none;
+        color: rgb(150, 150, 150);
+        padding: 10px 20px;
+        background-color: rgb(125, 125, 182);
+        border-radius: 5px;
+        width: fit-content;
+        color: red;
+    }
+    .back:hover{
+        background-color: darkblue;
+    }
+</style>
+<body>
+    <div class="container">
+        <img src="cartoon.jpg" alt="background-image" class="bg-image">
+        <img src="cows.jpg" alt="background-image" class="bg-image bg-image2">
+        
+        <div class="table">
+            <table>
+                <tr>
+                    <th class="th">page</th>
+                    <th class="th">content</th>
+                </tr>
+                <tr>
+                    <td class="td">03</td>
+                    <td class="td a"> <a href="assistant.html">introduction to this milk company</a></td>
+
+                </tr>
+                <tr>
+                    <td class="td">04</td>
+                    <td class="td a"><a href="Rwashamiire's milk processing.html">background</a></td>
+                </tr>
+                <tr>
+                    <td class="td">05</td>
+                    <td class="td a"><a href="our products.html">diary products</a></td>
+
+                </tr>
+                <tr>
+                    <td class="td">06</td>
+                    <td class="td a"><a href="login page.html">Login page </a></td>
+
+                </tr>
+                <tr>
+                    <td class="td">07</td>
+                    <td class="td a"><a href="login.html">Login</a></td>
+                </tr>
+                <tr>
+                    <td class="td">08</td>
+                    <td class="td a"><a href="register.html">Register</a></td>
+                </tr>
+                
+            </table>
+
+        </div>
+    </div>
+    <div class="back">
+        <a href="#" onclick="history.back()">back</a>
+        
+    </div>
+</body>
+</html>

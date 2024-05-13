@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your assistant</title>
+</head>
+<style>
+    .back button{
+        margin-top: 10px;
+        background-color: orangered;
+        position: absolute;
+    }
+    .bg-image {
+    width: 50%; /* Set width to 100% for background images */
+    height: 100%; /* Set height to 100% for background images */
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    z-index: -1; /* Send background images behind other content */
+    }
+    .bg-image2{
+        left: 50%;
+        width: 600px;
+        z-index: -1;
+    }
+    .inner-window{
+        margin-top: 0px;
+        background-color: rgb(13, 176, 59);
+        border-radius: 3px;
+        width: 250px;
+        height: 70px;
+        display: flex;
+    }
+    .address{
+        background-color: darkviolet;
+        width: 490px;
+        height: 280px;
+        border-radius: 5px;
+        display: inline;
+        font-size: 30px;
+        margin-top: 05px;
+    }
+    .body{
+        background-color: blueviolet;
+    }
+    .contacts{
+        margin-top: 220px;
+        background-color: grey;
+        width: fit-content;
+        padding: 14px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        background-color: blue;
+        border-radius: 5px;
+    }
+    a:hover{
+        background-color: darkblue;
+    }
+</style>
+<body class="body">
+    
+    <img src="cartoon.jpg" alt="background-image" class="bg-image">
+    <img src="cows.jpg" alt="background-image" class="bg-image bg-image2">
+    
+    <div class="inner-window">
+        Hi I'm your <br>assistant!
+    </div>
+    <div class="address">
+        we are found along ibanda street 
+        <br>plot number 16 <br>    P.O box 110;
+        <br>on complex building second floor;
+        <br> thank you for coming.
+    </div>
+    <div class="contacts">
+        for more information contact us at: <br>
+        email: rwashamiirediary2007@gmail.com
+        <br>phone number: +256 763 111 545
+        <br>
+    </div>
+
+    <div>
+        <a href="#" onclick="history.back()">back</a>
+        
+    </div>
+    
+</body>
+</html>
